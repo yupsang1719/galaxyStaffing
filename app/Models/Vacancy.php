@@ -10,10 +10,16 @@ class Vacancy extends Model
     use HasFactory;
     
     protected $fillable = [
+        'id',
         'title',
         'description',
         'location',
         'category',
         'salary',
     ];
+
+    public function applications()
+    {
+        return $this->hasMany(Application::class, 'job_id');
+    }
 }

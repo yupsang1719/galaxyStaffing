@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id(); 
-            $table->foreignId('job_id')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('job_id');
+            $table->foreign('job_id')->references('id')->on('vacancies')->onDelete('cascade');
             $table->string('applicant_name');
             $table->string('email');
             $table->text('resume');  // This can be a path to a file or text
