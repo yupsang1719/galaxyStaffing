@@ -1,6 +1,9 @@
 <!-- resources/views/admin/vacancies/index.blade.php -->
 
-@extends('layouts.app')
+@extends('layouts.admin')
+@section('no-navbar')
+@endsection
+
 
 @section('content')
     <h1>Vacancies</h1>

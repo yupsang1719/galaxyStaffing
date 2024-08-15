@@ -1,19 +1,18 @@
-import './bootstrap';
 // resources/js/admin.js
 
 document.addEventListener('DOMContentLoaded', function() {
     const contentDiv = document.getElementById('admin-content');
 
     // Load dashboard content by default
-    // fetch('/admin/dashboard')
-    //     .then(response => response.text())
-    //     .then(html => {
-    //         contentDiv.innerHTML = html;
-    //     })
-    //     .catch(error => {
-    //         contentDiv.innerHTML = '<p>Error loading dashboard content.</p>';
-    //         console.error('Error fetching dashboard content:', error);
-    //     });
+    fetch('/admin/dashboard')
+        .then(response => response.text())
+        .then(html => {
+            contentDiv.innerHTML = html;
+        })
+        .catch(error => {
+            contentDiv.innerHTML = '<p>Error loading dashboard content.</p>';
+            console.error('Error fetching dashboard content:', error);
+        });
 
     // Set up links to load other content dynamically
     const links = document.querySelectorAll('.sidebar .list-group-item a');

@@ -1,6 +1,6 @@
 <!-- resources/views/admin/applications/show.blade.php -->
 
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
     <h1>Application Details</h1>

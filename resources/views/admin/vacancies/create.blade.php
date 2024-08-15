@@ -1,6 +1,6 @@
 <!-- resources/views/admin/vacancies/create.blade.php -->
 
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
     <h1>Create Vacancy</h1>

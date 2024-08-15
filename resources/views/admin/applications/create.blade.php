@@ -1,6 +1,6 @@
 <!-- resources/views/admin/applications/create.blade.php -->
 
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
     <h1>Create Job Application</h1>

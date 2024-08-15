@@ -1,0 +1,119 @@
+/* resources/sass/admin.scss */
+
+/* General Body Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Nunito', sans-serif;
+    color: #343a40;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top: 80;
+    left: 0;
+    width: 220px;
+}
+
+.sidebar .list-group-item {
+    background-color: #343a40;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .list-group-item:hover,
+.sidebar .list-group-item.active {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.sidebar .list-group-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar .list-group-item a:hover {
+    color: #adb5bd;
+}
+
+/* Main Content Area */
+.admin-content {
+    margin-left: 120px; /* Space for sidebar */
+    padding: 30px;
+    background-color: #ffffff;
+    min-height: 100vh; /* Full height content */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Dashboard Widgets */
+.dashboard-widgets {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.widget {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.widget h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.widget p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Navbar Styles */
+// .navbar {
+//     background-color: #007bff;
+//     padding: 15px 30px;
+//     color: #ffffff;
+// }
+
+// .navbar .navbar-brand {
+//     color: #ffffff;
+//     font-weight: bold;
+// }
+
+// .navbar .nav-link {
+//     color: #ffffff;
+//     margin-right: 15px;
+//     transition: color 0.3s ease;
+// }
+
+// .navbar .nav-link:hover {
+//     color: #dbe2ef;
+// }
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: 240px; /* Align with sidebar */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer span {
+    color: #adb5bd;
+}
