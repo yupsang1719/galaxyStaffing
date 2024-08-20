@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\ContactMessage;
+use App\Mail\ContactMessageMail;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -28,7 +32,44 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'query' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'contact' => 'required|numeric',
+            'address' => 'required|string|max:255',
+            'message' => 'required|string',
+        ]);
+    
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
+    
+        $validated = $validator->validated();
+
+        // Send email
+        // Mail::to('admin@galaxystaffing.co.uk')->send(new ContactMessageMail(
+        //     $validated['name'],
+        //     $validated['query'],
+        //     $validated['email'],
+        //     $validated['message'],
+        //     $validated['address'],
+        //     $validated['contact']
+        // ));
+
+        // Create a new contact message
+        $contactMessage = ContactMessage::create([
+            'name' => $validated['name'],
+            'query' => $validated['query'],
+            'email' => $validated['email'],
+            'contact' => $validated['contact'],
+            'address' => $validated['address'],
+            'message' => $validated['message'],
+        ]);
+
+        
+    
+        return response()->json(['success' => 'Message sent successfully!'], 200);
     }
 
     /**

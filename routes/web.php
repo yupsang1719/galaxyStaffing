@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\JobController;
 use App\Http\Controllers\Admin\ApplicationController;
@@ -25,3 +26,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/csrf-token', function () {
+    return response()->json(['csrf_token' => csrf_token()]);
+});
+
+Route::post('/contact', [ContactController::class, 'store']);

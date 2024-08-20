@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Galaxy Care Staffing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="icon" href="imgs/logoFav-icon.png" type="image/x-icon">
@@ -136,7 +137,7 @@
         <div class="contact-container">
             <div class="contact-form card">
                 <h2>Contact Us</h2>
-                <form action="contact_submit.php" method="post">
+                <form id="contact-form">
                     <div class="form-row">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Name" required>
@@ -144,9 +145,11 @@
                         <div class="form-group">
                             <select id="query" name="query" required>
                                 <option value="" disabled selected>Select Query</option>
-                                <option value="General Inquiry">General Inquiry</option>
-                                <option value="Support">Support</option>
-                                <option value="Billing">Billing</option>
+                                <option value="General">General</option>
+                                <option value="Booking Staff">Booking Staff</option>
+                                <option value="Employee Registration">Employee Registration</option>
+                                <option value="Supplier">Supplier</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
                     </div>
@@ -165,6 +168,7 @@
                         <textarea id="message" name="message" placeholder="Message" required></textarea>
                     </div>
                     <input type="submit" value="Submit">
+                    <div id="response-message"></div>
                 </form>
             </div>
             <div class="contact-info card">
@@ -174,7 +178,7 @@
                 <p><strong>Email:</strong><br>admin@galaxystaffing.co.uk</p>
             </div>
         </div>
-    </section>
+    </section>    
 
     <!-- Popup for important news and ads -->
     <div id="popup" class="popup">
@@ -252,6 +256,7 @@
 
     <!-- External Scripts -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/contactForm.js"></script>
 </body>
 </html>
