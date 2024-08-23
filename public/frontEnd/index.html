@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Galaxy Care Staffing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
@@ -43,7 +44,7 @@
             <nav class="menu-container" id="nav-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#about-us">About Us</a></li>
                     <li><a href="#employers">Employers</a></li>
                     <li><a href="#registration">Employee Registration</a></li>
                     <li><a href="#staff">Staff Area</a></li>
@@ -58,31 +59,31 @@
 
     <!-- Main Content Sections -->
 
-    <section id="home">
+    <section id="home" class="home-section">
         <div class="hero">
             <div class="swiper-container home-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url('imgs/slider1.jpg');">
+                    <div class="swiper-slide" style="background-image: url('imgs/slider-1.png');">
+                        <a href="#about" class="cta">Learn More</a>
                         <h1>Welcome to Galaxy Care Staffing</h1>
                         <p>Supplying experienced health and social care professionals across Southeast England.</p>
-                        <a href="#about" class="cta">Learn More</a>
                     </div>
-                    <div class="swiper-slide" style="background-image: url('imgs/slider2.jpg');">
+                    <div class="swiper-slide" style="background-image: url('imgs/slider-2.png');">
+                        <a href="#employers" class="cta">Our Services</a>
                         <h1>Professional Healthcare Services</h1>
                         <p>We pride ourselves in providing excellent care and support.</p>
-                        <a href="#employers" class="cta">Our Services</a>
                     </div>
-                    <div class="swiper-slide" style="background-image: url('imgs/slider3.jpg');">
+                    <div class="swiper-slide" style="background-image: url('imgs/join-slider.jpg');">
+                        <a href="#registration" class="cta">Register Now</a>
                         <h1>Join Our Team</h1>
                         <p>Become part of our growing network of healthcare professionals.</p>
-                        <a href="#registration" class="cta">Register Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about">
+    <!-- <section id="about">
         <div class="about-container">
             <div class="about-text">
                 <h2>About Us</h2>
@@ -98,42 +99,135 @@
                     We have a dedicated team to assist Service Providers and Employment applicants with registering your interest.</p>
             </div>
             <div class="about-image">
-                <img src="imgs/about3.png" alt="About Us Image" class="scroll-animate">
+                <img src="imgs/icon-only.png" alt="About Us Image" class="scroll-animate">
+            </div>
+        </div>
+    </section> -->
+
+    
+
+    <section id="about-us" class="about-us-section">
+        <div class="about-us-container">
+            <div class="about-heading scroll-animate">
+                <h2>About Galaxy Care Staffing</h2>
+                <h3>We Pride in Excellent Care</h3>
+            </div>
+            <div class="about-content">
+                <div class="content-left scroll-animate">
+                    <div class="shape-circle"></div>
+                    <p>
+                        Galaxy Care Staffing is a leading supplier of health and social care professionals across Southeast England. We specialize in providing temporary staff to the Health and Social Care Sector, and we can respond to our client’s needs at short notice.
+                    </p>
+                    <p>
+                        With our knowledge and understanding, we follow our safe staff recruitment and selection procedure to ensure we employ care workers who have experience, skills, and compassion. Only the most suitable candidates are chosen to work for us, and all applicants receive fair and equitable treatment.
+                    </p>
+                    <p>
+                        We follow our equal opportunities policy to recruit and employ those people who are best suited for the vacancies for which they have applied. We have a dedicated team to assist Service Providers and Employment applicants with registering your interest.
+                    </p>
+                </div>
+                <div class="content-right scroll-animate">
+                    <div class="shape-line"></div>
+                    <h4>We provide experienced temporary staff to cover various roles, including:</h4>
+                    <ul>
+                        <li>Health Care Assistants and Senior Health Care Assistants for residential and nursing homes to assist the elderly and those who have physical and/or learning disabilities, including dementia, brain injuries.</li>
+                        <li>Support workers, team leaders (Medication trained and assessed), and Senior support workers for residential and nursing homes to assist people you support and those who have physical and/or learning disabilities.</li>
+                        <li>Support Workers for rehabilitation schemes and community-based services.</li>
+                        <li>Registered Care Managers.</li>
+                        <li>QCF assessors to assess candidates for level- 3 & level 5 diplomas.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="directors-message" class="directors-message-section">
+        <div class="directors-message-container">
+            <div class="director-image scroll-animate">
+                <img src="imgs/director.JPG" alt="Director Image">
+            </div>
+            <div class="director-text scroll-animate">
+                <h2>A Message from Our Director</h2>
+                <p>
+                    "We are dedicated to forming long-term relationships with both our valued clients and the care professionals we employ.We work closely with our clients to ensure that we meet all aspects of their staff criteria. We also liaise and update ourselves with information, policies provided by key regulatory bodies such as the Care Quality Commission (CQC), NHS and Skills for Care to ensure that our processes are aligned with all social care policy."
+                </p>
+                <p class="signature">- Ramesh Poudel, Director</p>
             </div>
         </div>
     </section>
 
-    <section id="employers">
+
+    <section id="employers" class="employers-section">
         <div class="employers-container">
-            <div class="employers-image">
-                <img src="imgs/emp.png" alt="Employers Image" class="scroll-animate">
-            </div>
-            <div class="employers-text">
+            <div class="employers-heading scroll-animate">
                 <h2>Employers</h2>
-                <p>Because the demand for care staff is often last minute and urgent, we provide a 24/7 service. Our service to you does not cease when we’ve met your needs. We focus on building strong relationships and will contact you regularly to discuss ways in which we can continue to assist you with any future requirements. We continually assess each candidate placed with you, seeking your feedback as this will assist us in improving the service we deliver. If any problems should arise, the situation will be investigated immediately and the necessary action taken.</p>
-                <h4>Induction and Training</h4>
-                <p>All our candidates receive a comprehensive induction, based on regulatory standards laid down by bodies such as Skills for Care and NICE (National Institute for Health and Care Excellence) and the CQC. We also ensure that our staff are inducted and receive training in line with the specific requirements of our Clients. We constantly review the skill requirements of our staff and work with external training providers to provide ongoing training.</p>
-                <h4>High Quality Candidates</h4>
-                <p>All candidates are interviewed in person and must have at least 12 months care work experience. Our stringent checking process includes Enhanced DBS checks, proof of identification, verification of right to work in UK, full employment history with details of any employment gaps, previous healthcare employment references, skills and training evaluation, and health screening.</p>
+                <p>Providing 24/7 service to meet last-minute and urgent care staffing needs.</p>
+            </div>
+            <div class="employers-content">
+                <div class="employers-text scroll-animate">
+                    <div class="icon-container">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Building Strong Relationships</h3>
+                    <p>
+                        Our service to you does not cease when we’ve met your needs. We focus on building strong relationships and will contact you regularly to 
+                        discuss ways in which we can continue to assist you with any future requirements. 
+                    </p>
+                    <p>We continually assess each candidate placed with you, seeking your feedback as this will assist us in improving the service we deliver. 
+                        If any problems should arise, the situation will be investigated immediately and the necessary action taken.
+                    </p>
+                </div>
+                <div class="employers-text scroll-animate">
+                    <div class="icon-container">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Induction and Training</h3>
+                    <p>
+                        All our candidates receive a comprehensive induction, based on regulatory standards laid down by bodies such as Skills for Care and NICE (National Institute for Health and Care Excellence) and the CQC. We also ensure that our staff are inducted and receive training in line with the specific requirements of our Clients.
+                    </p>
+                    <p>
+                        We constantly review the skill requirements of our staff and work with external training providers to provide ongoing training.
+                    </p>
+                </div>
+                <div class="employers-text scroll-animate">
+                    <div class="icon-container">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>High-Quality Candidates</h3>
+                    <p>
+                        All candidates are interviewed in person and must have at least 12 months care work experience.
+                    </p>
+                    <ul class="employers-checklist">
+                        <li>Enhanced DBS checks</li>
+                        <li>Proof of identification</li>
+                        <li>Verification of right to work in the UK</li>
+                        <li>Full employment history with details of any employment gaps</li>
+                        <li>Previous healthcare employment references</li>
+                        <li>Skills and training evaluation</li>
+                        <li>Health screening</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+    
 
-    <section id="registration">
+    <section id="registration" class="registration-section">
         <div class="content">
             <h2>Employee Registration</h2>
             <p>Recruitment process: Interviews, vetting checks, compliance training, and onboarding.</p>
         </div>
     </section>
 
-    <section id="staff">
+    <section id="staff" class="staff-section">
         <div class="content">
             <h2>Staff Area</h2>
             <p>Updates and policies related to employment, including COVID-19 guidelines.</p>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="contact-container">
             <div class="contact-form card">
                 <h2>Contact Us</h2>
@@ -189,6 +283,71 @@
         </div>
     </div>
 
+    <!-- Script for about us -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.scroll-animate');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+     </script>
+
+    <!-- Script for director's message -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.scroll-animate');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+    <!-- Script for employers section -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.scroll-animate');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+     </script>
     <!-- JavaScript for menu toggle -->
     <script>
         function toggleMenu() {
