@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -127,31 +130,6 @@ nav ul li a:hover {
 .hero p {
     font-size: 1.2rem;
 }
-
-/* .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1px; 
-    padding: 80px;
-}
-
-.about-text, .about-image {
-    flex: 1;
-    min-width: 300px; 
-}
-
-.about-text {
-    flex: 2; 
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 300px; 
-    margin: auto; 
-} */
-
 
 /* About Us Section */
 .about-us-section {
@@ -419,6 +397,116 @@ nav ul li a:hover {
     color: #A82020;
     display: inline-block;
 }
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #A82020; /* Primary brand color */
+}
+
+.testimonials-heading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #555; /* Secondary color for contrast */
+    margin-top: 10px;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Slider */
+.testimonial-slider {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.testimonial-slide {
+    flex: 0 0 33.333%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.testimonial-content {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-icon {
+    font-size: 2em;
+    color: #c95656; /* Primary brand color for the icon */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.testimonial-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #333; /* Darker text for readability */
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #c95656; /* Highlighted author name with primary color */
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.testimonial-shape {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Primary brand color */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.testimonial-slide:nth-child(odd) .testimonial-shape {
+    background-color: #ff6347; /* Secondary accent color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-slide {
+        flex: 0 0 100%;
+    }
+}
+
+
+
 /* Employers Section */
 .employers-section {
     padding: 60px 20px;
@@ -555,6 +643,674 @@ nav ul li a:hover {
         font-size: 2em;
     }
 }
+
+/* Recruitment Process Section */
+.recruitment-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.recruitment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recruitment-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #A82020; /* Primary brand color */
+    margin-bottom: 10px;
+}
+
+.recruitment-heading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Steps */
+.recruitment-steps {
+    position: relative;
+}
+
+.step {
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 45%;
+    z-index: 2;
+    padding: 0 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+
+.step-icon-circle {
+    width: 210px;  /* Increased size for better visibility */
+    height: 210px; /* Increased size for better visibility */
+    background-color: #A82020; /* Primary brand color for circle */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.step-icon-circle i {
+    font-size: 3.5em; /* Increased icon size */
+    margin-bottom: 10px;
+}
+
+.step-icon-circle h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em; /* Slightly larger font size for the title */
+    margin: 0;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.step p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Left and Right Positioning */
+.step-left {
+    left: 0;
+}
+
+.step-right {
+    right: 0;
+    margin-left: auto;
+}
+
+/* Arrow between steps */
+.step::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border: solid transparent;
+    border-width: 20px;
+    z-index: 1;
+}
+
+.step-left::after {
+    right: -60px;
+    border-left-color: #c95656;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.step-right::after {
+    left: -60px;
+    border-right-color: #c95656;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* Central Connecting Line */
+.recruitment-steps::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #c95656;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+/* Scroll Animation */
+.scroll-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .step-left::after,
+    .step-right::after {
+        display: none;
+    }
+
+    .recruitment-steps::before {
+        display: none;
+    }
+}
+
+/* Employee Registration Section */
+.registration-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.registration-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.registration-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #A82020; /* Primary brand color */
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.registration-heading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Shapes and Lines */
+.registration-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #c95656; /* Line color */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.registration-content {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1000px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+.registration-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.registration-benefits-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits-column {
+    width: 48%;
+}
+
+.registration-benefits {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    position: relative;
+    z-index: 2;
+}
+
+.registration-benefits li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 40px; /* Space for the icon */
+}
+
+.registration-benefits li i {
+    font-size: 1.5em;
+    color: #A82020;
+    position: absolute;
+    left: 0;
+}
+
+.registration-call {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.registration-call h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.registration-call p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.register-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #A82020; /* Primary brand color */
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.register-button:hover {
+    background-color: #c95656; /* Darker shade on hover */
+}
+
+/* Scroll Animation */
+.scroll-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Decorative Circles */
+.registration-section::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: -60px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue circle */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.registration-section::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 99, 71, 0.1); /* Light red circle */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-container {
+        text-align: left;
+    }
+
+    .registration-section::before,
+    .registration-section::after {
+        display: none;
+    }
+
+    .registration-benefits-container {
+        flex-direction: column;
+    }
+
+    .benefits-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .registration-benefits li {
+        font-size: 1em;
+    }
+
+    .registration-benefits li i {
+        font-size: 1.2em;
+    }
+
+    .register-button {
+        width: 100%;
+    }
+}
+
+
+/* Scroll Animation */
+.scroll-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Decorative Circles */
+.registration-section::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: -60px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue circle */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.registration-section::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 99, 71, 0.1); /* Light red circle */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-container {
+        text-align: left;
+    }
+
+    .registration-section::before,
+    .registration-section::after {
+        display: none;
+    }
+
+    .registration-benefits li {
+        font-size: 1em;
+    }
+
+    .registration-benefits li i {
+        font-size: 1.2em;
+    }
+
+    .register-button {
+        width: 100%;
+    }
+}
+
+
+/* Scroll Animation */
+.scroll-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+
+/* Scroll Animation */
+.scroll-animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .staff-resource-container {
+        padding: 20px;
+    }
+
+    .staff-resource-heading h2 {
+        font-size: 2em;
+    }
+
+    .staff-resource-heading p {
+        font-size: 1em;
+    }
+
+    .resource-button {
+        width: 100%;
+        padding: 15px 20px;
+    }
+}
+
+
+/* Staff Area Section */
+.staff-area-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    margin-top: 50px;
+}
+
+.staff-area-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.staff-resource-heading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.staff-resource-content {
+    text-align: center;
+}
+
+.staff-resource-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.staff-area-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #A82020; /* Primary brand color */
+    margin-bottom: 20px;
+}
+
+.staff-area-heading p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.staff-timesheet {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.staff-timesheet h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.download-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #c95656;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.download-link i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.staff-policies {
+    text-align: left;
+}
+
+.staff-policies h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.policy-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-item a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    color: #c95656;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.policy-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.policy-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .policy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    position: relative;
+}
+
+.why-choose-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #A82020;
+    margin-bottom: 40px;
+}
+
+.why-choose-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Ensure items are in a single row */
+}
+
+.why-choose-us-item {
+    flex: 0 0 18%; /* Each item takes up 23% of the container width */
+    margin: 0 2%; /* Adjust spacing between items */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.why-choose-us-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #A82020;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.why-choose-us-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.why-choose-us-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .why-choose-us-content {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+    .why-choose-us-item {
+        flex: 0 0 48%; /* Two items per row on small screens */
+        margin: 10px 1%;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-us-item {
+        flex: 0 0 100%; /* One item per row on very small screens */
+        margin-bottom: 20px;
+    }
+}
+
 
 /* image animatin while scrolling */
 .scroll-animate {

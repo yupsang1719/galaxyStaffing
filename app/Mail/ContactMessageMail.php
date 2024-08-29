@@ -17,7 +17,7 @@ class ContactMessageMail extends Mailable
     public $name;
     public $query;
     public $email;
-    public $message;
+    public $userMessage;
     public $address;
     public $contact;
 
@@ -29,7 +29,7 @@ class ContactMessageMail extends Mailable
         $this->name = $name;
         $this->query = $query;
         $this->email = $email;
-        $this->message = $message;
+        $this->userMessage = $message;
         $this->address = $address;
         $this->contact = $contact;
     }
@@ -41,7 +41,7 @@ class ContactMessageMail extends Mailable
     {
         return new Envelope(
             subject: $this->query,
-            from: new Address($this->email, $this->name) // Set sender's email and name
+            from: new Address(config('mail.from.address'), $this->name) // Set sender's email and name
         );
     }
 

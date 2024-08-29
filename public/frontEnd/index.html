@@ -14,48 +14,7 @@
 <body>
 
     <!-- Header Section -->
-    <header>
-        <div class="top-header">
-            <div class="top-header-left">
-                <a href="tel:1234567890"><img src="imgs/phone-call.png" alt="Phone" class="icon"> 123-456-7890</a>
-                <a href="mailto:info@galaxystaffing.co.uk"><img src="imgs/mail.png" alt="Mail" class="icon"> info@galaxystaffing.co.uk</a>
-            </div>
-            <div class="top-header-right">
-                <a href="http://127.0.0.1:8000/login"><img src="imgs/user.png" alt="Login" class="icon"> Login</a>
-                <a href="register.html"><img src="imgs/register.png" alt="Register" class="icon"> Register</a>
-                <a href="https://facebook.com" target="_blank"><img src="imgs/facebook.png" alt="Facebook" class="icon"></a>
-                <a href="https://instagram.com" target="_blank"><img src="imgs/instagram.png" alt="Instagram" class="icon"></a>
-                <a href="https://linkedin.com" target="_blank"><img src="imgs/linkedin.png" alt="LinkedIn" class="icon"></a>
-            </div>
-        </div>
-        <div class="header-container">
-            <div class="logo-container">
-                <img src="imgs/logo-web.png" alt="Logo" class="logo">
-            </div>
-
-            <div class="menu-icon" onclick="toggleMenu()">
-                &#9776; <!-- This is the hamburger icon -->
-            </div>
-            
-            <div class="close-icon" onclick="toggleMenu()">
-                &times; <!-- This is the cross icon -->
-            </div>
-
-            <nav class="menu-container" id="nav-menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#employers">Employers</a></li>
-                    <li><a href="#registration">Employee Registration</a></li>
-                    <li><a href="#staff">Staff Area</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="https://wa.me/1234567890" target="_blank">
-                        <img src="imgs/whatsapp.png" alt="WhatsApp" class="whatsapp-icon"></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- Main Content Sections -->
 
@@ -82,29 +41,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>We have extensive health & social care sector experience and are committed to providing a service. WE PRIDE IN EXCELLENT CARE.
-                    Our service is underpinned by quality, value for money and an ability to cater for diverse staffing requirements, no matter how urgent.
-                    We invest significant time and money on advertising and recruitment, which enables us to quickly source appropriately matched candidates.
-                    We are dedicated to forming long-term relationships with both us valued clients and the care professionals we employ.
-                    We work closely with our clients to ensure that we meet all aspects of their staff criteria. We also liaise and update ourselves with key legislation, 
-                    policies provided by regulatory bodies such as the Care Quality Commission (CQC), NHS and Skills for Care to ensure that our processes are aligned with 
-                    social care policy.
-                    Galaxy Care Staffing is a leading supplier of health and social care professionals across Southeast England. We specialise in providing temporary 
-                    and permanent staff to the Health and Social Care Sector, and we can respond to our client’s needs at short notice.
-                    We have a dedicated team to assist Service Providers and Employment applicants with registering your interest.</p>
-            </div>
-            <div class="about-image">
-                <img src="imgs/icon-only.png" alt="About Us Image" class="scroll-animate">
-            </div>
-        </div>
-    </section> -->
-
-    
 
     <section id="about-us" class="about-us-section">
         <div class="about-us-container">
@@ -140,8 +76,6 @@
         </div>
     </section>
     
-
-
     <section id="directors-message" class="directors-message-section">
         <div class="directors-message-container">
             <div class="director-image scroll-animate">
@@ -157,7 +91,144 @@
         </div>
     </section>
 
+    <section id="testimonials" class="testimonials-section">
+        <div class="testimonials-container">
+            <div class="testimonials-heading">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by many, here's what they have to say about our services.</p>
+            </div>
+            <div class="testimonial-slider" id="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "I can honestly say, that working with Galaxy has been fantastic.I feel confident that my requests for staffing, 
+                                even at very short notice, are not only acknowledged in a timely manner, that they will be covered by a professional, competent member of the Galaxy team."
+                            </p>
+                            <p class="testimonial-author">- Mandy, Support Manager</p>
+                        </div>
+                        <div class="testimonial-shape"></div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Galaxy staff team are great, they are experienced and very professional. They have always been able to cover shifts in short notice with great support workers and always helped us during staffing needs.
+                                Cameron"
+                            </p>
+                            <p class="testimonial-author">- Cameron (Deputy manager, nursing care)</p>
+                        </div>
+                        <div class="testimonial-shape"></div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "We have been using Galaxy for a year now and I think they are the best agency in the area. 
+                                I highly recommend Galaxy to service providers struggling to cover shifts internally.
+                                Angie"
+                            </p>
+                            <p class="testimonial-author">- Angie (Registered Manager, learning disability)</p>
+                        </div>
+                        <div class="testimonial-shape"></div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Galaxy is our preferred supplier. 
+                                They provide us with high quality care workers and always strive to cover the shifts with most appropriate skilled care assistants. Thanks Guys.
+                                "
+                            </p>
+                            <p class="testimonial-author">- Debbie (GeneralManager, nursing care)</p>
+                        </div>
+                        <div class="testimonial-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="why-choose-us" class="why-choose-us-section">
+        <div class="why-choose-us-container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="why-choose-us-content">
+                <div class="why-choose-us-item scroll-animate">
+                    <div class="icon-circle">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3>We are trusted</h3>
+                    <p>Our clients trust us to provide reliable, high-quality staffing solutions.</p>
+                </div>
+                <div class="why-choose-us-item scroll-animate">
+                    <div class="icon-circle">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Respond quickly</h3>
+                    <p>We respond promptly to all requests, ensuring your needs are met swiftly.</p>
+                </div>
+                <div class="why-choose-us-item scroll-animate">
+                    <div class="icon-circle">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>100% full effort</h3>
+                    <p>We put in our full effort to meet and exceed your expectations.</p>
+                </div>
+                <div class="why-choose-us-item scroll-animate">
+                    <div class="icon-circle">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>24/7 service</h3>
+                    <p>We offer round-the-clock service to meet urgent and last-minute needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="employee-registration" class="registration-section">
+        <div class="registration-container">
+            <div class="registration-heading">
+                <h2>Employee Registration</h2>
+                <p>We are a Staffing Agency, providing work opportunities in health & social care throughout the Southeast of the UK.</p>
+            </div>
+            <div class="registration-content">
+                <p>If you are seeking permanent or part-time employment, we can help you access diverse opportunities, at all levels, with leading organisations. If you are looking to register with us for temporary work, we offer the following benefits:</p>
+                <div class="registration-benefits-container">
+                    <div class="benefits-column">
+                        <ul class="registration-benefits">
+                            <li><i class="fas fa-pound-sign"></i> Excellent rates of weekly pay</li>
+                            <li><i class="fas fa-clock"></i> Flexible hours – days, nights & weekends</li>
+                            <li><i class="fas fa-briefcase"></i> Choice of work in a variety of settings</li>
+                            <li><i class="fas fa-star"></i> First-class reputation & preferred supplier status with major clients</li>
+                        </ul>
+                    </div>
+                    <div class="benefits-column">
+                        <ul class="registration-benefits">
+                            <li><i class="fas fa-file-contract"></i> Legally compliant contracts (including AWR, working time, etc)</li>
+                            <li><i class="fas fa-graduation-cap"></i> Free / subsidised training</li>
+                            <li><i class="fas fa-headset"></i> Ongoing support & expert career advice</li>
+                            <li><i class="fas fa-user-friends"></i> Recommend a friend” reward scheme</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="registration-call">
+                    <h3>Register Today</h3>
+                    <p>Whether you’re seeking full-time employment or temporary work, simply call us to speak to an experienced consultant. If you would prefer for us to call you, complete our quick online registration form and we’ll get back to you ASAP.</p>
+                    <a href="#contact" class="register-button">Register Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="employers" class="employers-section">
         <div class="employers-container">
             <div class="employers-heading scroll-animate">
@@ -211,21 +282,47 @@
             </div>
         </div>
     </section>
+
+    <section id="recruitment-process" class="recruitment-section">
+        <div class="recruitment-container">
+            <div class="recruitment-heading">
+                <h2>Our Recruitment Process</h2>
+                <p>Galaxy Care Staffing: We Pride in Excellent Care</p>
+            </div>
+            <div class="recruitment-steps">
+                <div class="step step-left">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Interview</h3>
+                    </div>
+                    <p>Our first step is a detailed interview process to understand your experience and skills.</p>
+                </div>
+                <div class="step step-right">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Robust Vetting Checks</h3>
+                    </div>
+                    <p>We conduct thorough vetting checks, including background and DBS checks, to ensure safety and compliance.</p>
+                </div>
+                <div class="step step-left">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-book-medical"></i>
+                        <h3>Compliance & Mandatory Social Care Training</h3>
+                    </div>
+                    <p>Compliance training ensures you meet all the mandatory requirements to provide excellent care.</p>
+                </div>
+                <div class="step step-right">
+                    <div class="step-icon-circle">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Start Working</h3>
+                    </div>
+                    <p>Once all checks and training are complete, you're ready to start your new role with confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
-
-    <section id="registration" class="registration-section">
-        <div class="content">
-            <h2>Employee Registration</h2>
-            <p>Recruitment process: Interviews, vetting checks, compliance training, and onboarding.</p>
-        </div>
-    </section>
-
-    <section id="staff" class="staff-section">
-        <div class="content">
-            <h2>Staff Area</h2>
-            <p>Updates and policies related to employment, including COVID-19 guidelines.</p>
-        </div>
-    </section>
 
     <section id="contact" class="contact-section">
         <div class="contact-container">
@@ -274,6 +371,9 @@
         </div>
     </section>    
 
+     <!-- Footer Section -->
+     <div id="footer-placeholder"></div>
+
     <!-- Popup for important news and ads -->
     <div id="popup" class="popup">
         <div class="popup-content">
@@ -282,140 +382,14 @@
             <p>This is some important news or an ad that you want to display.</p>
         </div>
     </div>
-
-    <!-- Script for about us -->
-     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const elements = document.querySelectorAll('.scroll-animate');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.5
-            });
-
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-     </script>
-
-    <!-- Script for director's message -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const elements = document.querySelectorAll('.scroll-animate');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.5
-            });
-
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-    </script>
-
-    <!-- Script for employers section -->
-     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const elements = document.querySelectorAll('.scroll-animate');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.5
-            });
-
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-     </script>
-    <!-- JavaScript for menu toggle -->
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("nav-menu").querySelector("ul");
-            var menuIcon = document.querySelector(".menu-icon");
-            var closeIcon = document.querySelector(".close-icon");
-
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-                menuIcon.style.display = "block";
-                closeIcon.style.display = "none";
-            } else {
-                menu.style.display = "block";
-                menuIcon.style.display = "none";
-                closeIcon.style.display = "block";
-            }
-        }
-    </script>
-
-    <!-- JavaScript for popup toggle -->
-    <script>
-        function togglePopup() {
-            var popup = document.getElementById("popup");
-            if (popup.style.display === "flex") {
-                popup.style.display = "none";
-            } else {
-                popup.style.display = "flex";
-            }
-        }
-
-        // Show popup on every page load
-        window.onload = function() {
-            setTimeout(togglePopup, 5000); // Show the popup after 5 seconds
-        }
-    </script>
-
-    <!-- JavaScript for scroll animations -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const elements = document.querySelectorAll('.scroll-animate');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.5
-            });
-
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-    </script>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Galaxy Staffing. All rights reserved.</p>
-        </div>
-    </footer>
-
+   
     <!-- External Scripts -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/header-footer.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/contactForm.js"></script>
+
 </body>
 </html>

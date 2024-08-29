@@ -48,14 +48,14 @@ class ContactController extends Controller
         $validated = $validator->validated();
 
         // Send email
-        // Mail::to('admin@galaxystaffing.co.uk')->send(new ContactMessageMail(
-        //     $validated['name'],
-        //     $validated['query'],
-        //     $validated['email'],
-        //     $validated['message'],
-        //     $validated['address'],
-        //     $validated['contact']
-        // ));
+        Mail::to('thenngbirash124@gmail.com')->send(new ContactMessageMail(
+            $validated['name'],
+            $validated['query'],
+            $validated['email'],
+            $validated['message'],
+            $validated['address'],
+            $validated['contact']
+        ));
 
         // Create a new contact message
         $contactMessage = ContactMessage::create([
@@ -67,8 +67,6 @@ class ContactController extends Controller
             'message' => $validated['message'],
         ]);
 
-        
-    
         return response()->json(['success' => 'Message sent successfully!'], 200);
     }
 

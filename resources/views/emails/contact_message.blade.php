@@ -11,6 +11,6 @@
     <p><strong>Contact Number:</strong> {{ $contact }}</p>
     <p><strong>Address:</strong> {{ $address }}</p>
     <p><strong>Message:</strong></p>
-    <p>{{ $message }}</p>
+    <p>{{ $userMessage }}</p>
 </body>
 </html>
